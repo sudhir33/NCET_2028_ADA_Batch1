@@ -1,11 +1,11 @@
 #include<stdio.h>
-void insertionSort(int *arr,int n)// arr,9
+void insertionSort(int *arr,int n)
 {
 	if(n==1)
 	{
 		return;
 	}
-	insertionSort(arr,n-1);//arr,8
+	insertionSort(arr,n-1);
 	int j,temp,i;
 	i=n-1;
 	temp=arr[i];
@@ -21,9 +21,9 @@ void insertionSort(int *arr,int n)// arr,9
 		}
 	}
 	arr[j+1]=temp;
-	
-	
 }
+
+
 int main()
 {
 	int n;
